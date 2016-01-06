@@ -5,6 +5,18 @@
     margin: 40px auto 0;
     border-bottom: 1px solid $ash-grey;
 
+    .fa-sort-desc {
+      margin: 0 8px 0 3px;
+      position: relative;
+
+      &::before {
+        display: block;
+        margin-top: -9px;
+        position: absolute;
+        top: -5px;
+      }
+    }
+
     .cube_head {
       border-bottom: 1px solid $ash-grey;
       padding-bottom: 10px;
@@ -86,32 +98,20 @@
 
         & > div:first-of-type {
           width: 100%;
-          margin-top: 20px;
+          margin-top: 26px;
 
-          .custom_toggle_buttons {
-            visibility: hidden;
+          .custom_invisible {
+            display: none;
           }
 
-          .custom_toggle_buttons_visible {
-            visibility: visible;
+          .custom_visible {
+            display: inline-block;
           }
 
           .aui-buttons {
 
             i {
               margin-right: 3px;
-            }
-
-            .fa-sort-desc {
-              margin: 0 8px 0 3px;
-              position: relative;
-
-              &::before {
-                display: block;
-                margin-top: -9px;
-                position: absolute;
-                top: -5px;
-              }
             }
 
             input {
