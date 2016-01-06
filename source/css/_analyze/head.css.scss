@@ -8,10 +8,10 @@
     .cube_head {
       border-bottom: 1px solid $ash-grey;
       padding-bottom: 10px;
-      height: 94px;
+      height: 90px;
 
       .cube_head_left {
-        width: 500px;
+        width: 600px;
         height: 100%;
         float: left;
 
@@ -80,15 +80,54 @@
       .cube_head_right {
         float: right;
         height: 100%;
-        width: calc(100% - 500px);
+        width: calc(100% - 600px);
+        text-align: right;
         position: relative;
 
-        & > div {
+        & > div:first-of-type {
           width: 100%;
-          text-align: right;
+          margin-top: 20px;
+
+          .custom_toggle_buttons {
+            visibility: hidden;
+          }
+
+          .custom_toggle_buttons_visible {
+            visibility: visible;
+          }
+
+          .aui-buttons {
+
+            i {
+              margin-right: 3px;
+            }
+
+            .fa-sort-desc {
+              margin: 0 8px 0 3px;
+              position: relative;
+
+              &::before {
+                display: block;
+                margin-top: -9px;
+                position: absolute;
+                top: -5px;
+              }
+            }
+
+            input {
+              width: 14px;
+              height:14px;
+              margin-right: 5px;
+              cursor: pointer;
+            }
+          }
+        }
+
+        & > div:last-of-type {
+          width: 100%;
+          line-height: 0;
           position: absolute;
           bottom: 0;
-          line-height: 0;
 
           section {
             display: inline-block;
@@ -96,14 +135,14 @@
 
             &:first-of-type {
               padding-right: 6px;
-              height: 27px;
+              height: 23px;
               padding-top: 3px;
               vertical-align: top;
 
               span {
                 display: inline-block;
                 vertical-align: top;
-                margin: 3px 5px 0 0;
+                margin: 2px 5px 0 0;
                 font-size: .9em;
                 color: $grey;
               }
@@ -127,7 +166,7 @@
 
                 i {
                   display: block;
-                  font-size: 28px;
+                  font-size: 24px;
                   color: $ash-grey;
                 }
               }
@@ -154,7 +193,7 @@
                 display: block;
                 width: 250px;
                 float: left;
-                height: 26px;
+                height: 22px;
                 padding-left: 10px;
                 border-top-left-radius: $border-radius;
                 border-bottom-left-radius: $border-radius;
@@ -179,9 +218,9 @@
                 }
 
                 i {
-                  height: 20px;
+                  height: 16px;
                   width: 28px;
-                  padding: 6px 0 0;
+                  padding: 3px 0 0;
                   color: $grey;
                 }
               }

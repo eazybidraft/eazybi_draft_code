@@ -9,15 +9,34 @@
       %h3 10 days ago
 
     .aui-buttons
-      %a.aui-button.aui-button-primary{href: "#"} New Report
+      %a.aui-button.aui-button-compact.aui-button-primary{href: "#"} New Report
+      %a.aui-button.aui-button-compact{href: "#"} New Folder
     .aui-buttons
-      %a.aui-button{href: "#"} Empty
-      %a.aui-button{href: "#"} Delete
+      %a.aui-button.aui-button-compact{href: "#"} Empty
+      %a.aui-button.aui-button-compact{href: "#"} Delete
     .aui-buttons
-      %a.aui-button{href: "#"} Import Reports
-      %a.aui-button{href: "#"} Export Reports
+      %a.aui-button.aui-button-compact{href: "#"} Import Reports
+      %a.aui-button.aui-button-compact{href: "#"} Export Reports
 
   .cube_head_right
+    %div
+      .aui-buttons.custom_toggle_buttons
+        %a.aui-button{href: "#"}
+          More
+          %i.fa.fa-sort-desc
+        %a.aui-button{href: "#"}
+          %i.fa.fa-folder-open-o
+          Move To
+          %i.fa.fa-sort-desc
+        %a.aui-button{href: "#"}
+          %i.fa.fa-trash-o
+          Delete
+      .aui-buttons
+        .aui-button
+          %input{type: "checkbox"}
+          Select
+          %i.fa.fa-sort-desc
+
     %div
       %section
         %span Views:
