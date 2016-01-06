@@ -1,5 +1,7 @@
 page "*", :layout => "/_layouts/main"
 
+require_relative "./lib/build_cleaner"
+
 helpers do
   def is_page_current(page)
     current_page.url.index(page) != nil
