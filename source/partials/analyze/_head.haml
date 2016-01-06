@@ -1,0 +1,31 @@
+.cube_head
+
+  .cube_head_left
+    %span
+      = partial "partials/svg/cube"
+      %h2 Sales
+    %section
+      %h3 375 MB
+      %h3 10 days ago
+
+    .aui-buttons
+      %a.aui-button.aui-button-primary{href: "#"} New Report
+    .aui-buttons
+      %a.aui-button{href: "#"} Empty
+      %a.aui-button{href: "#"} Delete
+    .aui-buttons
+      %a.aui-button{href: "#"} Import Reports
+      %a.aui-button{href: "#"} Export Reports
+
+  .cube_head_right
+    %div
+      %section
+        %span Views:
+        %a{class: is_page_current_exact("/analyze/") ? "current": "", href: "/analyze"}
+          %i.fa.fa-th
+        %a{class: is_page_current_exact("/analyze/list/") ? "current": "", href: "/analyze/list"}
+          %i.fa.fa-align-justify
+      %section
+        %input{type: "search", placeholder: "Search"}
+        %button
+          %i.fa.fa-search

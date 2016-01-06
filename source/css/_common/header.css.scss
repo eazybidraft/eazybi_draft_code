@@ -1,0 +1,61 @@
+header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: $light-gray;
+  @extend %clearfix;
+  z-index: 100;
+  will-change: transform;
+  border-bottom: 1px solid $ash-grey;
+
+  .logo {
+    display: block;
+    float: left;
+    line-height: 0;
+    padding: 7px 10px 0;
+    width: 60px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    &:first-of-type {
+      float: left;
+    }
+
+    li {
+      display: inline-block;
+      position: relative;
+
+      a {
+        display: block;
+        padding: 12px 10px;
+        color: $charcoal;
+        font-size: 14px;
+        font-weight: bold;
+
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+
+    li.current {
+
+      a {
+        color: $blue;
+        background: $silver;
+
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+}

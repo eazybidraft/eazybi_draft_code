@@ -1,0 +1,10 @@
+.cube_body
+  %section
+    - data.cube_charts.each do |c|
+      %span.cube_cell
+        .cell_icon
+          = partial "#{c.img}"
+        %a.cell_text{href: c.url}
+          %p= c.text
+        %button
+          %i.fa.fa-pencil

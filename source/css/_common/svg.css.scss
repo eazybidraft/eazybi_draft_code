@@ -1,0 +1,61 @@
+svg {
+
+  path, polygon, polyline, rect, circle {
+    fill: $blue-eazy;
+  }
+}
+
+.gauge_icon {
+
+  path:first-of-type {
+    fill: none;
+    stroke: $blue-eazy;
+  }
+}
+
+.line_icon {
+
+  polyline {
+    fill: none;
+    stroke: $blue-eazy;
+  }
+}
+
+.folder_icon {
+  rect, polygon {
+    fill: $yellow;
+  }
+}
+
+
+.analyze_index {
+
+  svg {
+
+    path, polygon, polyline, rect, circle {
+      fill: white;
+    }
+  }
+
+  .gauge_icon {
+
+    path:first-of-type {
+      fill: none;
+      stroke: white;
+    }
+  }
+
+  .line_icon {
+
+    polyline {
+      fill: none;
+      stroke: white;
+    }
+  }
+
+  .folder_icon {
+    rect, polygon {
+      fill: white;
+    }
+  }
+}

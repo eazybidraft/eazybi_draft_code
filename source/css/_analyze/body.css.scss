@@ -1,0 +1,126 @@
+.analyze_content {
+
+  .analyze_cube {
+
+    .cube_body {
+      padding: 20px 0;
+      background: $light-gray;
+      text-align: left;
+
+      & > section {
+        max-width: 1572px;
+        margin: auto;
+      }
+
+      .cube_cell {
+        display: inline-block;
+        vertical-align: top;
+        width: 250px;
+        min-height: 40px;
+        border: 1px solid $blue-eazy;
+        border-radius: $border-radius;
+        background: $blue-eazy;
+        position: relative;
+        margin: 2px 2px 2px 1px;
+        @extend %clearfix;
+
+        &:nth-of-type(-n+2) {
+          border: 1px solid $yellow;
+          background: $yellow;
+
+          &:hover {
+            border: 1px solid darken($yellow, 10%);
+            background: darken($yellow, 10%);
+          }
+        }
+
+        &:hover {
+          border: 1px solid darken($blue-eazy, 10%);
+          background: darken($blue-eazy, 10%);
+
+          .cell_text {
+
+            p {
+              text-decoration: underline;
+            }
+          }
+
+          button {
+            display: block;
+          }
+        }
+
+        .cell_icon {
+          min-height: 40px;
+          height: auto;
+          width: 32px;
+          float: left;
+
+          svg {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: 6px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+
+            g {
+
+              path {
+              }
+            }
+          }
+        }
+
+        .cell_text {
+          float: right;
+          min-height: 30px;
+          width: 208px;
+          background: white;
+          position: relative;
+          border-top-right-radius: $border-radius;
+          border-bottom-right-radius: $border-radius;
+          padding: 5px;
+
+          p {
+            font-size: .9em;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            width: 208px;
+            color: $blue;
+          }
+        }
+
+        button {
+          border: none;
+          background: none;
+          width: 30px;
+          height: auto;
+          display: none;
+          position: absolute;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          background: $light-gray;
+          opacity: .5;
+          border-top-right-radius: $border-radius;
+          border-bottom-right-radius: $border-radius;
+          z-index: 100;
+
+          &:hover {
+            opacity: 1;
+          }
+
+          i {
+            display: block;
+            font-size: 1.25em;
+            margin: auto;
+            color: $medium-grey;
+          }
+        }
+      }
+    }
+  }
+}

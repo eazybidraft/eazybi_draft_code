@@ -1,0 +1,37 @@
+.cube_body
+  %table.aui.aui-table-interactive
+    %thead
+      %tr{role: "row", class: "tablesorter-headerRow"}
+        %th Name
+        %th Created
+        %th Owner
+        %th Updated
+        %th Updated by
+        %th Actions
+
+    - data.cube_charts.each do |c|
+      %tbody
+        %tr{role: "row"}
+          %td
+            = partial "#{c.img}"
+            %a{href: "#"}= c.text
+          %td= c.created
+          %td= c.owner
+          %td= c.updated
+          %td= c.updated_by
+          %td.aui-compact-button-column
+            %i.fa.fa-pencil
+            %button.aui-button.aui-button-compact.aui-button-subtle.aui-dropdown2-trigger.aui-dropdown2-trigger-arrowless{"aria-controls" => "dropdown10", "aria-expanded" => "false", "aria-haspopup" => "true", :href => "#", :resolved => ""}
+              %span ...
+
+            %div.aui-dropdown2.aui-style-default.aui-layer{"aria-hidden" => "true", :resolved => ""}
+              %ul.aui-list-truncate
+                %li
+                  %a.active{:href => "#"} Menu item
+                %li
+                  %a{:href => "#"} Menu item
+                %li
+                  %a{:href => "#"} Menu item
+
+
+            %input{type: "checkbox"}

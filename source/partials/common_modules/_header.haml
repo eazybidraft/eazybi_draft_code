@@ -1,0 +1,9 @@
+%header
+  .standard_wrap
+    %a.logo{href: "/_home"}
+      %img{src: "/img/common/eazybi.png", alt: "eazyBI logo"}
+    %ul
+      %li{class: is_page_current("/_home/") ? "current": ""}= link_to("Home", "/_home")
+      %li{class: is_page_current("/source_data/") ? "current": ""}= link_to("Source Data", "/source_data")
+      %li{class: is_page_current("/analyze/") ? "current": ""}= link_to("Analyze", "/analyze")
+      %li{class: is_page_current("/dashboards/") ? "current": ""}= link_to("Dashboards", "/dashboards")

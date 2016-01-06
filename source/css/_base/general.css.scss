@@ -1,0 +1,163 @@
+%clearfix {
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.standard_wrap {
+  height: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.blue-eazy {
+  color: $blue-eazy;
+}
+
+.red-eazy {
+  color: $red-eazy;
+}
+
+.white_bg {
+  background: white;
+}
+
+.light_grey_bg {
+  background: $light-gray;
+}
+
+.dark_grey_bg {
+  background: $light-gray;
+}
+
+.p_align_left p {
+  text-align: left;
+}
+
+@mixin absolute__center($t, $r, $b, $l){
+  top: $t;
+  bottom: $b;
+  left: $l;
+  right: $r;
+  margin: auto;
+}
+
+//===================================================================================
+
+* {
+  text-decoration: none;
+
+  list-style: none;
+  font-weight: normal;
+
+  outline: none;
+}
+
+#content {
+  min-height: calc(100vh - 60px);
+  background: white;
+}
+
+body {
+  background: $light-gray;
+}
+
+h1 {
+  color: $blue-eazy;
+  font-size: 32px;
+  font-weight: normal;
+  margin: 0 auto 20px;
+}
+
+h2 {
+  color: $blue-eazy;
+  margin: 0 auto 20px;
+  font-size: 24px;
+}
+
+h3 {
+  color: $charcoal;
+  font-size: 20px;
+}
+
+h4, h5, h6 {
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+h1, h6 {
+  padding: 0 5%;
+}
+
+p {
+  color: $grey;
+  line-height: 1.25;
+  margin: 5px auto;
+  max-width: 640px;
+  padding: 0 5%;
+}
+
+a {
+  color: $blue;
+
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  line-height: 1.25;
+  color: $grey;
+}
+
+img {
+  max-width: 100%;
+}
+
+blockquote {
+  color: $grey;
+  display: block;
+  margin: 0 auto 10px;
+  font-style: italic;
+  max-width: 640px;
+  text-align: left;
+  line-height: 1.5;
+  padding: 0 5%;
+
+  &::before {
+    content: "\201C";
+    margin-right: 5px;
+  }
+
+  &::after {
+    content: "\201D";
+    margin-left: 5px;
+  }
+
+  &::before, &::after {
+    color: rgba($blue-eazy, .5);
+    font-size: 2.5em;
+    line-height: 0;
+    vertical-align: -15px;
+  }
+}

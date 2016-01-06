@@ -1,0 +1,194 @@
+.analyze_content {
+  padding: 40px 20px 40px;
+
+  .analyze_cube {
+    margin: 40px auto 0;
+    border-bottom: 1px solid $ash-grey;
+
+    .cube_head {
+      border-bottom: 1px solid $ash-grey;
+      padding-bottom: 10px;
+      height: 94px;
+
+      .cube_head_left {
+        width: 500px;
+        height: 100%;
+        float: left;
+
+        & > span {
+          display: block;
+          height: 32px;
+
+          svg {
+            width: 30px;
+            height: 30px;
+            margin-top: 2px;
+
+            polygon {
+              fill: $blue-eazy;
+            }
+          }
+
+          h2 {
+            display: inline-block;
+            vertical-align: top;
+            margin: 2px 0 0;
+            padding: 0;
+            color: $blue-eazy;
+          }
+        }
+
+        & > section {
+          margin: 4px 0 7px;
+
+          h3 {
+            display: inline-block;
+            margin: 0;
+            font-size: 1em;
+            font-weight: bold;
+            color: $medium-grey;
+
+            &::before {
+              font-weight: normal;
+              display: inline-block;
+              margin-right: 5px;
+              font-size: .9em;
+            }
+
+            &:first-of-type {
+              padding-right: 10px;
+
+              &::before {
+                content: "Size:";
+              }
+            }
+
+            &:last-of-type {
+
+              &::before {
+                content: "Last import:";
+              }
+            }
+          }
+        }
+
+        .aui-buttons:last-of-type {
+          margin-left: 6px;
+        }
+      }
+
+      .cube_head_right {
+        float: right;
+        height: 100%;
+        width: calc(100% - 500px);
+        position: relative;
+
+        & > div {
+          width: 100%;
+          text-align: right;
+          position: absolute;
+          bottom: 0;
+          line-height: 0;
+
+          section {
+            display: inline-block;
+            line-height: 1.5;
+
+            &:first-of-type {
+              padding-right: 6px;
+              height: 27px;
+              padding-top: 3px;
+              vertical-align: top;
+
+              span {
+                display: inline-block;
+                vertical-align: top;
+                margin: 3px 5px 0 0;
+                font-size: .9em;
+                color: $grey;
+              }
+
+              a {
+                display: inline-block;
+
+                &:first-of-type {
+                  margin-right: 2px;
+                }
+
+                &:hover,
+                &:active,
+                &:focus {
+                  text-decoration: none;
+
+                  i {
+                    color: darken($ash-grey, 15%);
+                  }
+                }
+
+                i {
+                  display: block;
+                  font-size: 28px;
+                  color: $ash-grey;
+                }
+              }
+
+              a.current {
+
+                i {
+                  color: $grey;
+
+                  &:hover {
+                    color: $medium-grey;
+                  }
+                }
+              }
+            }
+
+            &:last-of-type {
+              @extend %clearfix;
+              padding-left: 10px;
+              border-left: 1px solid $ash-grey;
+
+              input {
+                border: 1px solid $ash-grey;
+                display: block;
+                width: 250px;
+                float: left;
+                height: 26px;
+                padding-left: 10px;
+                border-top-left-radius: $border-radius;
+                border-bottom-left-radius: $border-radius;
+              }
+
+              button {
+                float: left;
+                display: block;
+                background: $light-gray;
+                margin-left: -1px;
+                border: 1px solid $ash-grey;
+                border-top-right-radius: $border-radius;
+                border-bottom-right-radius: $border-radius;
+
+                &:hover {
+                  background: $silver;
+                  border: 1px solid $grey;
+
+                  i {
+                    color: $medium-grey;
+                  }
+                }
+
+                i {
+                  height: 20px;
+                  width: 28px;
+                  padding: 6px 0 0;
+                  color: $grey;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

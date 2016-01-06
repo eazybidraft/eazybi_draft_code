@@ -1,0 +1,74 @@
+.analyze_list_index {
+
+  .analyze_content {
+
+    .analyze_cube {
+      border-bottom: none;
+
+      .cube_body {
+        padding: 20px 0;
+        background: white;
+
+        table.aui.aui-table-interactive {
+          max-width: 1600px;
+          margin: 0 auto;
+
+          thead {
+
+            th {
+              font-weight: bold;
+              color: $medium-grey;
+            }
+          }
+
+          tbody {
+
+            tr {
+
+              td {
+                vertical-align: middle;
+                color: $medium-grey;
+                padding: 5px 10px;
+
+                &:last-of-type {
+                  width: 90px;
+                }
+
+                svg {
+                  width: 20px;
+                  height: 20px;
+                  vertical-align: middle;
+                  margin-right: 5px;
+                  line-height: 0;
+                }
+
+                a:hover {
+                  text-decoration: underline;
+                }
+
+                button {
+                  vertical-align: middle;
+                  overflow: hidden;
+
+                  span {
+                    font-size: 2em;
+                    font-weight: bold;
+                    line-height: 0;
+                  }
+                }
+
+                [type="checkbox"] {
+                  display: inline-block;
+                  width: 18px;
+                  height: 18px;
+                  vertical-align: middle;
+                  margin-left: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
