@@ -20,6 +20,8 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
 
+  activate :build_cleaner
+
   # Append a hash to asset urls (make sure to use the url helpers)
   #activate :asset_hash
 end
