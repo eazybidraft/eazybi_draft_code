@@ -3,7 +3,7 @@
   .analyze_cube {
 
     .cube_body {
-      padding: 20px 0;
+      padding: 10px 0;
       background: $light-gray;
       text-align: left;
 
@@ -16,37 +16,17 @@
         display: inline-block;
         vertical-align: top;
         width: 250px;
-        min-height: 40px;
-        border: 1px solid $blue-eazy;
-        border-radius: $border-radius;
-        background: $blue-eazy;
+        height: 40px;
         position: relative;
-        margin: 2px 2px 2px 1px;
+        margin: 2px 2px 4px 1px;
+        border-radius: $border-radius;
+        background: white;
         @extend %clearfix;
 
-        &:nth-of-type(-n+2) {
-          border: 1px solid $yellow;
-          background: $yellow;
-
-          &:hover {
-            border: 1px solid darken($yellow, 10%);
-            background: darken($yellow, 10%);
-          }
-        }
-
         &:hover {
-          border: 1px solid darken($blue-eazy, 10%);
-          background: darken($blue-eazy, 10%);
 
-          .cell_text {
-
-            p {
-              text-decoration: underline;
-            }
-          }
-
-          button {
-            display: block;
+          p {
+            text-decoration: underline;
           }
         }
 
@@ -54,6 +34,7 @@
           min-height: 40px;
           height: auto;
           width: 32px;
+          border-right: 1px solid $light-gray;
           float: left;
 
           svg {
@@ -76,11 +57,8 @@
         .cell_text {
           float: right;
           min-height: 30px;
-          width: 208px;
-          background: white;
+          width: 207px;
           position: relative;
-          border-top-right-radius: $border-radius;
-          border-bottom-right-radius: $border-radius;
           padding: 5px;
 
           p {
@@ -119,6 +97,22 @@
             margin: auto;
             color: $medium-grey;
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+
+  .analyze_content {
+
+    .analyze_cube {
+
+      .cube_body {
+
+        & > section {
+          max-width: 1281px;
         }
       }
     }

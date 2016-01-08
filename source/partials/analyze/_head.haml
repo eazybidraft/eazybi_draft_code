@@ -1,13 +1,26 @@
 .cube_head
-
-  .cube_head_left
+  .cube_header
     %span
       = partial "partials/svg/cube"
-      %h2 Sales
-    %section
+      %h2 Lorem ipsum dolor sit amet.
+
+    .cube_data
       %h3 375 MB
       %h3 10 days ago
 
+    .cube_searchblock
+      %section
+        %span Views:
+        %a{class: is_page_current_exact("/analyze/") ? "current": "", href: "/analyze"}
+          %i.fa.fa-th
+        %a{class: is_page_current_exact("/analyze/list/") ? "current": "", href: "/analyze/list"}
+          %i.fa.fa-align-justify
+      %section
+        %input{type: "search", placeholder: "Search"}
+        %button
+          %i.fa.fa-search
+
+  .cube_head_left
     .aui-buttons
       %a.aui-button.aui-button-compact.aui-button-primary{href: "#"} New Report
       %a.aui-button.aui-button-compact{href: "#"} New Folder
@@ -19,33 +32,27 @@
       %a.aui-button.aui-button-compact{href: "#"} Export Reports
 
   .cube_head_right
-    %div
-      .aui-buttons
-        %a.aui-button.aui-button-compact{href: "#"}
-          More
-          %i.fa.fa-sort-desc
-      .aui-buttons.custom_invisible
-        %a.aui-button.aui-button-compact{href: "#"}
-          %i.fa.fa-folder-open-o
-          Move To
-          %i.fa.fa-sort-desc
-        %a.aui-button.aui-button-compact{href: "#"}
-          %i.fa.fa-trash-o
-          Delete
-      .aui-buttons
-        .aui-button.aui-button-compact
-          %input{type: "checkbox"}
-          Select
-          %i.fa.fa-sort-desc
-
-    %div
-      %section
-        %span Views:
-        %a{class: is_page_current_exact("/analyze/") ? "current": "", href: "/analyze"}
-          %i.fa.fa-th
-        %a{class: is_page_current_exact("/analyze/list/") ? "current": "", href: "/analyze/list"}
-          %i.fa.fa-align-justify
-      %section
-        %input{type: "search", placeholder: "Search"}
-        %button
-          %i.fa.fa-search
+    .aui-buttons.hide_reports
+      %a.aui-button.aui-button-compact{href: "#"}
+        Hide Reports
+        %i.fa.fa-sort-asc
+    .aui-buttons.show_reports
+      %a.aui-button.aui-button-compact{href: "#"}
+        Show Reports
+        %i.fa.fa-sort-desc
+    .aui-buttons.custom_invisible
+      %a.aui-button.aui-button-compact{href: "#"}
+        %i.fa.fa-star-o
+        Favourite
+      %a.aui-button.aui-button-compact{href: "#"}
+        %i.fa.fa-folder-open-o
+        Move To
+        %i.fa.fa-sort-desc
+      %a.aui-button.aui-button-compact{href: "#"}
+        %i.fa.fa-trash-o
+        Delete
+    .aui-buttons
+      .aui-button.aui-button-compact
+        %input.check_all{type: "checkbox"}
+        Select
+        %i.fa.fa-sort-desc

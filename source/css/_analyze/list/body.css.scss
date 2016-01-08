@@ -6,8 +6,7 @@
       border-bottom: none;
 
       .cube_body {
-        padding: 20px 0;
-        background: white;
+        padding: 0;
 
         table.aui.aui-table-interactive {
           max-width: 1600px;
@@ -18,6 +17,10 @@
             th {
               font-weight: bold;
               color: $medium-grey;
+
+              &:hover {
+                cursor: pointer;
+              }
             }
           }
 

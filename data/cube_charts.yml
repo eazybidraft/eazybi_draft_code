@@ -18,6 +18,14 @@
 
 - url:                    "#"
   text:                   JIRA Demo Issue bar chart
+  img:                    /img/common/bar.svg
+  created:                7 months ago
+  owner:                  Lauma Cīrule
+  updated:                7 months ago
+  updated_by:             Lauma Cīrule
+
+- url:                    "#"
+  text:                   JIRA Demo Issue bar chart
   img:                    partials/svg/bar
   created:                7 months ago
   owner:                  Lauma Cīrule
@@ -33,8 +41,24 @@
   updated_by:             Lauma Cīrule
 
 - url:                    "#"
+  text:                   Issues closed in last 30 days gantt
+  img:                    /img/common/gantt.svg
+  created:                7 months ago
+  owner:                  Lauma Cīrule
+  updated:                7 months ago
+  updated_by:             Lauma Cīrule
+
+- url:                    "#"
   text:                   JIRA Demo - Issue Resolution Days gauge
   img:                    partials/svg/gauge
+  created:                7 months ago
+  owner:                  Lauma Cīrule
+  updated:                7 months ago
+  updated_by:             Lauma Cīrule
+
+- url:                    "#"
+  text:                   Sample - average age days - trend for last 30 days line chart
+  img:                    /img/common/line.svg
   created:                7 months ago
   owner:                  Lauma Cīrule
   updated:                7 months ago
@@ -66,6 +90,14 @@
 
 - url:                    "#"
   text:                   Demo Scatter Chart Sprints
+  img:                    /img/common/scatter.svg
+  created:                7 months ago
+  owner:                  Lauma Cīrule
+  updated:                7 months ago
+  updated_by:             Lauma Cīrule
+
+- url:                    "#"
+  text:                   Demo Scatter Chart Sprints
   img:                    partials/svg/scatter
   created:                7 months ago
   owner:                  Lauma Cīrule
@@ -74,7 +106,23 @@
 
 - url:                    "#"
   text:                   Sample open issues by component and priority timeline
+  img:                    /img/common/timeline.svg
+  created:                7 months ago
+  owner:                  Lauma Cīrule
+  updated:                7 months ago
+  updated_by:             Lauma Cīrule
+
+- url:                    "#"
+  text:                   Sample open issues by component and priority timeline
   img:                    partials/svg/timeline
+  created:                7 months ago
+  owner:                  Lauma Cīrule
+  updated:                7 months ago
+  updated_by:             Lauma Cīrule
+
+- url:                    "#"
+  text:                   JIRA Demo - Cumulative Issues table
+  img:                    /img/common/table.svg
   created:                7 months ago
   owner:                  Lauma Cīrule
   updated:                7 months ago

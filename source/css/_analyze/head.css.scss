@@ -2,11 +2,10 @@
   padding: 40px 20px 40px;
 
   .analyze_cube {
-    margin: 40px auto 0;
-    border-bottom: 1px solid $ash-grey;
+    margin: 50px auto 0;
 
     .fa-sort-desc {
-      margin: 0 8px 0 3px;
+      margin: 0 10px 0 3px;
       position: relative;
 
       &::before {
@@ -17,19 +16,30 @@
       }
     }
 
+    .fa-sort-asc {
+      margin: 0 10px 0 3px;
+      position: relative;
+
+      &::before {
+        display: block;
+        position: absolute;
+        top: -1px;
+      }
+    }
+
     .cube_head {
       border-bottom: 1px solid $ash-grey;
       padding-bottom: 10px;
-      height: 90px;
+      @extend %clearfix;
 
-      .cube_head_left {
-        width: 600px;
-        height: 100%;
-        float: left;
+      .cube_header {
+        @extend %clearfix;
 
         & > span {
           display: block;
           height: 32px;
+          margin-bottom: 10px;
+          float: left;
 
           svg {
             width: 30px;
@@ -50,8 +60,9 @@
           }
         }
 
-        & > section {
-          margin: 4px 0 7px;
+        .cube_data {
+          margin: 9px 0 0 10px;
+          float: left;
 
           h3 {
             display: inline-block;
@@ -68,7 +79,7 @@
             }
 
             &:first-of-type {
-              padding-right: 10px;
+              padding-right: 6px;
 
               &::before {
                 content: "Size:";
@@ -84,50 +95,10 @@
           }
         }
 
-        .aui-buttons:last-of-type {
-          margin-left: 6px;
-        }
-      }
-
-      .cube_head_right {
-        float: right;
-        height: 100%;
-        width: calc(100% - 600px);
-        text-align: right;
-        position: relative;
-
-        & > div:first-of-type {
-          width: 100%;
-          margin-top: 26px;
-
-          .custom_invisible {
-            display: none;
-          }
-
-          .custom_visible {
-            display: inline-block;
-          }
-
-          .aui-buttons {
-
-            i {
-              margin-right: 3px;
-            }
-
-            input {
-              width: 14px;
-              height:14px;
-              margin-right: 5px;
-              cursor: pointer;
-            }
-          }
-        }
-
-        & > div:last-of-type {
-          width: 100%;
+        .cube_searchblock {
           line-height: 0;
-          position: absolute;
-          bottom: 0;
+          margin-top: 5px;
+          float: right;
 
           section {
             display: inline-block;
@@ -136,7 +107,7 @@
             &:first-of-type {
               padding-right: 6px;
               height: 23px;
-              padding-top: 3px;
+              padding-top: 2px;
               vertical-align: top;
 
               span {
@@ -202,29 +173,84 @@
               button {
                 float: left;
                 display: block;
-                background: $light-gray;
                 margin-left: -1px;
-                border: 1px solid $ash-grey;
-                border-top-right-radius: $border-radius;
-                border-bottom-right-radius: $border-radius;
+                border: none;
+                padding: 0;
+                background: none;
 
                 &:hover {
-                  background: $silver;
-                  border: 1px solid $grey;
 
                   i {
+                    background: $silver;
                     color: $medium-grey;
+                    border: 1px solid $grey;
                   }
                 }
 
                 i {
-                  height: 16px;
-                  width: 28px;
-                  padding: 3px 0 0;
+                  height: 20px;
+                  width: 42px;
+                  padding: 4px 0 0;
+                  display: block;
+                  margin: 0;
                   color: $grey;
+                  border: 1px solid $ash-grey;
+                  border-top-right-radius: $border-radius;
+                  border-bottom-right-radius: $border-radius;
+                  background: $light-gray;
                 }
               }
             }
+          }
+        }
+      }
+
+      .cube_head_left {
+        width: 600px;
+        height: 100%;
+        float: left;
+
+        .aui-buttons:last-of-type {
+          margin-left: 6px;
+        }
+      }
+
+      .cube_head_right {
+        float: right;
+        height: 100%;
+        width: calc(100% - 600px);
+        text-align: right;
+        position: relative;
+        margin: 0;
+        padding: 0;
+
+        .custom_invisible {
+          display: none;
+        }
+
+        .custom_visible {
+          display: inline-block;
+        }
+
+        .show_reports {
+          display: none;
+        }
+
+        .aui-buttons {
+
+          i {
+            margin-right: 5px;
+
+            &::before {
+              margin-top: -7px;
+            }
+          }
+
+          input {
+            width: 14px;
+            height:14px;
+            margin-right: 5px;
+            cursor: pointer;
           }
         }
       }

@@ -28,34 +28,34 @@ svg {
 }
 
 
-.analyze_index {
-
-  svg {
-
-    path, polygon, polyline, rect, circle {
-      fill: white;
-    }
-  }
-
-  .gauge_icon {
-
-    path:first-of-type {
-      fill: none;
-      stroke: white;
-    }
-  }
-
-  .line_icon {
-
-    polyline {
-      fill: none;
-      stroke: white;
-    }
-  }
-
-  .folder_icon {
-    rect, polygon {
-      fill: white;
-    }
-  }
-}
+//.analyze_index {
+//
+//  svg {
+//
+//    path, polygon, polyline, rect, circle {
+//      fill: white;
+//    }
+//  }
+//
+//  .gauge_icon {
+//
+//    path:first-of-type {
+//      fill: none;
+//      stroke: white;
+//    }
+//  }
+//
+//  .line_icon {
+//
+//    polyline {
+//      fill: none;
+//      stroke: white;
+//    }
+//  }
+//
+//  .folder_icon {
+//    rect, polygon {
+//      fill: white;
+//    }
+//  }
+//}
