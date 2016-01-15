@@ -60,8 +60,10 @@
           width: 207px;
           position: relative;
           padding: 5px;
+          display: flex;
 
           p {
+            align-self: center;
             font-size: .9em;
             margin: 0;
             padding: 0;

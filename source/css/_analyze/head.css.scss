@@ -47,7 +47,7 @@
             margin-top: 2px;
 
             polygon {
-              fill: $blue-eazy;
+              fill: $medium-grey;
             }
           }
 
@@ -56,12 +56,29 @@
             vertical-align: top;
             margin: 2px 0 0;
             padding: 0;
-            color: $blue-eazy;
+            color: $medium-grey;
+          }
+        }
+
+        .aui-buttons {
+          float: left;
+          margin: 10px 0 0;
+          height: auto;
+
+          .aui-button-link {
+            border: none;
+            padding: 0;
+            margin: 0 0 0 10px;
+            height: auto;
+            
+            &:last-of-type {
+              color: $red;
+            }
           }
         }
 
         .cube_data {
-          margin: 9px 0 0 10px;
+          margin: 10px 0 0 10px;
           float: left;
 
           h3 {
@@ -250,6 +267,7 @@
             width: 14px;
             height:14px;
             margin-right: 5px;
+            margin-top: 3px;
             cursor: pointer;
           }
         }
