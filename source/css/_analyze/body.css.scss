@@ -4,7 +4,7 @@
 
     .cube_body {
       padding: 10px 0;
-      background: $light-gray;
+      background: lighten($light-gray, 1%);
       text-align: left;
 
       & > section {
@@ -28,6 +28,10 @@
           p {
             text-decoration: underline;
           }
+
+          button {
+            display: block;
+          }
         }
 
         .cell_icon {
@@ -37,20 +41,16 @@
           border-right: 1px solid $light-gray;
           float: left;
 
-          svg {
+          i {
             width: 20px;
             height: 20px;
             position: absolute;
+            display: block;
+            font-size: 20px;
             left: 6px;
             top: 0;
             bottom: 0;
             margin: auto;
-
-            g {
-
-              path {
-              }
-            }
           }
         }
 
@@ -83,14 +83,14 @@
           right: 0;
           top: 0;
           bottom: 0;
-          background: $light-gray;
-          opacity: .5;
+          background: white;
+          opacity: .4;
           border-top-right-radius: $border-radius;
           border-bottom-right-radius: $border-radius;
           z-index: 100;
 
           &:hover {
-            opacity: 1;
+            opacity: .9;
           }
 
           i {

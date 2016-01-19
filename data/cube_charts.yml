@@ -1,7 +1,7 @@
 - url:                    "#"
   folder:                 ""
   text:                   JIRA Demo Dashboards
-  img:                    partials/svg/folder
+  icon:                   eazybi-folder
   created:                7 months ago
   owner:                  Lauma Cīrule
   updated:                7 months ago
@@ -10,7 +10,7 @@
 - url:                    "#"
   folder:                 ""
   text:                   Zephyr Favourite Charts 2015
-  img:                    partials/svg/folder_fav
+  icon:                   eazybi-folder_fav
   created:                7 months ago
   owner:                  Lauma Cīrule
   updated:                7 months ago
@@ -19,7 +19,7 @@
 - url:                    "#"
   folder:                 ""
   text:                   Zephyr Private Charts 2015
-  img:                    partials/svg/folder_priv
+  icon:                   eazybi-folder_private
   created:                7 months ago
   owner:                  Lauma Cīrule
   updated:                7 months ago
@@ -27,7 +27,7 @@
 
 - url:                    "#"
   text:                   JIRA Demo Issue bar chart
-  img:                    partials/svg/bar
+  icon:                   eazybi-bar
   created:                7 months ago
   owner:                  Lauma Cīrule
   updated:                7 months ago
@@ -35,7 +35,7 @@
 
 - url:                    "#"
   text:                   Issues closed in last 30 days gantt
-  img:                    partials/svg/gantt
+  icon:                   eazybi-gantt
   created:                7 months ago
   owner:                  Lauma Cīrule
   updated:                7 months ago
@@ -43,7 +43,7 @@
 
 - url:                    "#"
   text:                   JIRA Demo - Issue Resolution Days gauge
-  img:                    partials/svg/gauge
+  icon:                   eazybi-gauge
   created:                7 months ago
   owner:                  Lauma Cīrule
   updated:                7 months ago
@@ -51,7 +51,7 @@
 
 - url:                    "#"
   text:                   Sample - average age days - trend for last 30 days line chart
-  img:                    partials/svg/line
+  icon:                    eazybi-line
   created:                7 months ago
   owner:                  Lauma Cīrule
   updated:                7 months ago
@@ -59,7 +59,7 @@
 
 - url:                    "#"
   text:                   Demo Version map
-  img:                    partials/svg/map
+  icon:                   eazybi-map
   created:                7 months ago
   owner:                  Lauma Cīrule
   updated:                7 months ago
@@ -67,7 +67,7 @@
 
 - url:                    "#"
   text:                   Example - Pie chart for issue with subtasks
-  img:                    partials/svg/pie
+  icon:                   eazybi-pie
   created:                7 months ago
   owner:                  Lauma Cīrule
   updated:                7 months ago
@@ -75,7 +75,7 @@
 
 - url:                    "#"
   text:                   Demo Scatter Chart Sprints
-  img:                    partials/svg/scatter
+  icon:                   eazybi-scatter
   created:                7 months ago
   owner:                  Lauma Cīrule
   updated:                7 months ago
@@ -83,7 +83,7 @@
 
 - url:                    "#"
   text:                   Sample open issues by component and priority timeline
-  img:                    partials/svg/timeline
+  icon:                   eazybi-timeline
   created:                7 months ago
   owner:                  Lauma Cīrule
   updated:                7 months ago
@@ -91,7 +91,7 @@
 
 - url:                    "#"
   text:                   JIRA Demo - Cumulative Issues table
-  img:                    partials/svg/table
+  icon:                   eazybi-table
   created:                7 months ago
   owner:                  Lauma Cīrule
   updated:                7 months ago

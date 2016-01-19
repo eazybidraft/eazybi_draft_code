@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'icomoon';
+  src:    url('../fonts/icomoon.eot?cww9zl');
+  src:    url('../fonts/icomoon.eot?cww9zl#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?cww9zl') format('truetype'),
+  url('../fonts/icomoon.woff?cww9zl') format('woff'),
+  url('../fonts/icomoon.svg?cww9zl#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="eazybi-"], [class*=" eazybi-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: $medium-grey;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="eazybi-folder"] {
+  color: $yellow;
+}
+
+.eazybi-table:before {
+  content: "\e900";
+}
+.eazybi-gantt:before {
+  content: "\e901";
+}
+.eazybi-timeline:before {
+  content: "\e902";
+}
+.eazybi-scatter:before {
+  content: "\e903";
+}
+.eazybi-map:before {
+  content: "\e904";
+}
+.eazybi-line:before {
+  content: "\e905";
+}
+.eazybi-pie:before {
+  content: "\e906";
+}
+.eazybi-gauge:before {
+  content: "\e907";
+}
+.eazybi-folder_private:before {
+  content: "\e908";
+}
+.eazybi-folder_fav:before {
+  content: "\e909";
+}
+.eazybi-folder:before {
+  content: "\e90a";
+}
+.eazybi-cube:before {
+  content: "\e90b";
+}
+.eazybi-bar:before {
+  content: "\e90c";
+}
